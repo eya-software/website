@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "npm run build && firebase deploy"
+    "deploy": "npm run build && firebase deploy && node scripts/gh-pages-deploy.js"
   },
   "dependencies": {
     "core-js": "^3.6.4",
@@ -23,6 +23,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "execa": "latest",
     "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
